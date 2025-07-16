@@ -1,0 +1,34 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+.loader-container{
+    text-align: center;
+}
+.agua-cup{
+    position: relative;
+    width: 100px;
+    height: 150px;
+    border: 5px solid #4592ce;
+    border-radius: 5px 5px 0 0;
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.agua-fill{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: #4592ce;
+    transition: height 0.1s;
+}
+.percentage{
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #4592ce;
+}

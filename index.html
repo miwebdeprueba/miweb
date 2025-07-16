@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos de Sistemas | Aprende y Crece</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo"><a href="#">SOA - UTP</a></h1>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#cursos">Nuestros Cursos</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Transforma tu Futuro con Conocimiento en Sistemas</h2>
+                <p>Aprende las habilidades más demandadas en el mundo de la tecnología. Cursos prácticos, instructores expertos y oportunidades reales de crecimiento.</p>
+                <a href="#cursos" class="btn btn-primary">Explora Nuestros Cursos</a>
+            </div>
+            <div class="hero-image">
+                <img src="img/banner1.PNG" alt="Estudiantes aprendiendo sistemas">
+            </div>
+        </div>
+    </section>
+
+    <section id="cursos" class="courses-section">
+        <div class="container">
+            <h2>Nuestros Cursos Destacados</h2>
+            <p class="section-description">Elige tu camino en el mundo de la tecnología con nuestros programas especializados.</p>
+
+            <div class="course-grid">
+                <div class="course-card" data-course="desarrollo-web">
+                    <img src="img/web.PNG" alt="Desarrollo Web">
+                    <h3>Desarrollo Web Full Stack</h3>
+                    <p>Domina front-end y back-end para crear aplicaciones web robustas.</p>
+                    <button class="btn btn-secondary view-details">Ver Detalles</button>
+                </div>
+
+                <div class="course-card" data-course="ciencia-datos">
+                    <img src="img/php.PNG" alt="Ciencia de Datos">
+                    <h3>Ciencia de Datos con Python</h3>
+                    <p>Aprende a analizar datos, construir modelos predictivos y visualizar información.</p>
+                    <button class="btn btn-secondary view-details">Ver Detalles</button>
+                </div>
+
+                <div class="course-card" data-course="ciberseguridad">
+                    <img src="img/hacking.PNG" alt="Ciberseguridad">
+                    <h3>Ciberseguridad y Ethical Hacking</h3>
+                    <p>Protege sistemas y redes de ataques, y conviértete en un experto en seguridad.</p>
+                    <button class="btn btn-secondary view-details">Ver Detalles</button>
+                </div>
+
+                <div class="course-card" data-course="bases-datos">
+                    <img src="img/sql.PNG" alt="Bases de Datos">
+                    <h3>Administración de Bases de Datos SQL</h3>
+                    <p>Gestiona, optimiza y asegura bases de datos relacionales.</p>
+                    <button class="btn btn-secondary view-details">Ver Detalles</button>
+                </div>
+
+                <div class="course-card" data-course="cloud-computing">
+                    <img src="img/clound.PNG" alt="Cloud Computing">
+                    <h3>Cloud Computing con AWS</h3>
+                    <p>Despliega y gestiona infraestructuras y aplicaciones en la nube de Amazon Web Services.</p>
+                    <button class="btn btn-secondary view-details">Ver Detalles</button>
+                </div>
+
+                 <div class="course-card" data-course="desarrollo-movil">
+                    <img src="img/android.PNG" alt="Desarrollo Móvil">
+                    <h3>Desarrollo Móvil con React Native</h3>
+                    <p>Crea aplicaciones multiplataforma para iOS y Android con un solo código.</p>
+                    <button class="btn btn-secondary view-details">Ver Detalles</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="course-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modal-course-title"></h3>
+            <div class="modal-body">
+                <p><strong>Contenido:</strong></p>
+                <ul id="modal-course-content"></ul>
+                <p><strong>Duración:</strong> <span id="modal-course-duration"></span></p>
+                <p><strong>Costo:</strong> <span id="modal-course-cost"></span></p>
+                <button class="btn btn-primary">Inscríbete Ahora</button>
+            </div>
+        </div>
+    </div>
+
+    <section id="testimonios" class="testimonials-section">
+        <div class="container">
+            <h2>Lo que Dicen Nuestros Estudiantes</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"El curso de Desarrollo Web me abrió las puertas a mi primer trabajo como desarrollador. Los instructores son excelentes y el material es muy práctico."</p>
+                    <div class="testimonial-author">
+                        <img src="img/avatarhombre.PNG" alt="Avatar Juan Pérez">
+                        <span>Juan Pérez</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Nunca pensé que la Ciencia de Datos fuera tan fascinante. Gracias a TecnoCursos, ahora puedo aplicar mis conocimientos en mi empresa."</p>
+                    <div class="testimonial-author">
+                        <img src="img/avatarmujer.PNG" alt="Avatar María López">
+                        <span>María López</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"La formación en Ciberseguridad fue intensiva pero muy completa. Siento que tengo las herramientas para enfrentar cualquier reto de seguridad informática."</p>
+                    <div class="testimonial-author">
+                        <img src="img/avatarhombre2.jpg" alt="Avatar Carlos García">
+                        <span>Carlos García</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <p class="section-description">¿Tienes alguna pregunta? Envíanos un mensaje y te responderemos a la brevedad.</p>
+            <div class="contact-content">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre Completo</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Tu Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Siempre Viva 123, Lima, Perú</p>
+                    <p><i class="fas fa-phone"></i> +51 987 654 321</p>
+                    <p><i class="fas fa-envelope"></i> info@tecnocursosperu.com</p>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 SOA - UTP. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet"/> 
+<script type="module">
+  import {createChat} from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+  createChat({ 
+    webhookUrl: 'https://n8n.srv890401.hstgr.cloud/webhook/51c2bd59-d4bf-472d-bf6d-d050b16e9ac0/chat',
+    target : '#n8n-chat' , 
+	mode : 'window' , 
+	chatInputKey : 'chatInput' , 
+	chatSessionKey : 'sessionId' , 
+	loadPreviousSession : true , 
+	metadata : { } , 
+	showWelcomeScreen : false , 
+	defaultLanguage : 'en' , 
+	initialMessages : [ 
+		'¡Hola! 👋' , 
+		'Mi nombre es Mia. ¿Cómo puedo ayudarte hoy?' 
+	] , 
+	i18n : { 
+		en : { 
+			title : '¡Hola! 👋' , 
+			subtitle : "Inicia un chat. Estamos aquí para ayudarte las 24 horas, los 7 días de la semana." , 
+			footer : '' , 
+			getStarted : 'Nueva conversación' , 
+			inputPlaceholder : 'Escribe tu pregunta..' , 
+		} , 
+	} , 
+  });  
+</script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
